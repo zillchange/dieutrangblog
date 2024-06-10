@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+div.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(244 232 248 / 100%);
+  display: flex;
+  direction: row;
+  align-items: center;
+  border-radius: 100px;
+  margin-top: 15px;
+}
+.header img {
+  width: 250px;
+  height: 250px; /* giữ tỉ lệ và cắt đi phần thừa*/
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 40px;
+}
+
+.header div:last-child {
+  flex: 10;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: larger;
+  font-family: Verdana, sans-serif;
+  color: #ff881d;
+}
+
+.content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-content,
+.right-content {
+  width: 50%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Georgia, serif;
+  /* box-sizing: border-box; */
+}
+
+.left-content .infor,
+.right-content .infor {
+  width: 70%;
+  height: auto;
+  background-color: rgb(244 232 248 / 100%);
+  border-radius: 50px;
+  padding: 40px;
+  text-align: justify;
+}
+
+.left-content .personalInfor span,
+.education span {
+  color: #ff881d;
+}
+
+.left-content h4,
+.right-content h4 {
+  text-transform: capitalize;
+  color: #ff881d;
+  text-align: center;
+}
+
+.content .techSkill,
+.softSkill,
+.education,
+.academicProject {
+  margin-top: 30px;
+}
+
+.left-content .infor ul {
+  list-style-position: inside;
+}
+
+.left-content .infor li::marker,
+.right-content .infor li::marker {
+  color: #ff881d;
+}
+/* right content */
+
+.right-content .education li {
+  list-style-type: none;
+}
+
+.right-content .academicProject li {
+  margin-top: 10px;
+}
